@@ -1,0 +1,235 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: system-ui;
+  scroll-behavior: smooth;
+}
+div {
+  font-weight: 400;
+  font-size: 16px;
+}
+button {
+  border-radius: 6px;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+header {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+.search > input {
+  padding: 0px;
+  outline: none;
+  font-size: 16px;
+  height: 100%;
+  border: 1px solid black;
+}
+.search > button {
+  height: 100%;
+  background-color: lightgrey;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+nav {
+  height: max-content;
+  width: 100%;
+  padding: 10px;
+  background-color: skyblue;
+  align-items: center;
+  display: flex;
+}
+.login_holder{
+  justify-content: baseline;
+}
+nav > img {
+  width: 36px;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+nav > a {
+  height: max-content;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+.coverbanner {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right;
+  background-size: cover;
+}
+.quote {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 10%;
+  height: max-content;
+  width: 400px;
+  font-size: 48px;
+  color: #114287;
+}
+.quote > a,
+.aboutus_section > .aboutus_section_wrapper > a,
+.doctors_section > a {
+  display: inline-block;
+  text-transform: capitalize;
+  background-color: rgb(68, 68, 255);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 0.5em;
+  padding: 0.5em 1.5em 0.75em;
+  text-decoration: none;
+  box-shadow: 0px 5px 0px blue;
+}
+.quote > a:hover {
+  color: blue;
+}
+.aboutus_section,
+.services_section,
+.doctors_section {
+  width: 1140px;
+  text-align: center;
+  margin: 0px auto;
+}
+.aboutus_section_wrapper {
+  width: 650px;
+  margin: 0px auto;
+  font-weight: 400;
+}
+.aboutus_section_wrapper > p {
+  color: grey;
+  margin: auto 0px 15px 0px;
+}
+.heading {
+  color: #114287;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 350;
+  margin: 15px 0px;
+}
+/* for two h1 tag aboutus and services headings */
+.services_wrapper,
+.doctors_wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+/* contains all the services_holder  */
+.services_wrapper > .services_holder,
+.doctors_wrapper > .doctors_holder {
+  height: 200px;
+  width: 250px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 9px 18px rgb(0 0 0 / 14%);
+  background-color: #fff;
+  transition: all 0.3s ease;
+  line-height: 24px;
+}
+.doctors_wrapper > .doctors_holder {
+  position: relative;
+  width: calc(100% / 2 - 20px);
+}
+.services_wrapper > .services_holder:hover {
+  transform: scale(1.11);
+}
+/* services box or container */
+.services_wrapper > .services_holder > .img_holder {
+  max-width: 80px;
+  width: 80%;
+  margin: 0 auto;
+  height: 57px;
+  margin-bottom: 20px;
+}
+.services_wrapper > .services_holder > .img_holder > img {
+  height: 100%;
+  width: 100%;
+}
+/* image box of service */
+.services_wrapper > .services_holder > .name {
+ 
+  font-size: 15px;
+  text-align: center;
+}
+
+.services_wrapper > .services_holder > .text_holder>p {
+font-size: 13px;
+}
+
+/* title of service  */
+.services_wrapper > .services_holder > .text_holder {
+}
+/* text of service */
+.services_holder > a,
+.doctors_holder > a {
+ 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.doctors_wrapper>.doctors_holder>.img_holder>img
+{
+  height: 100px;
+  width: 100px;
+}
+
+.doctors_wrapper>.doctors_holder>.hover{
+  margin-top: 15px;
+}
+/* for contact us section where includes map and contact information */
+.container_section {
+  
+  width: 100%;
+  background-color: skyblue;
+  color: white;
+}
+.container_section > .contact_section > .heading,
+.payment > .heading {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.container_section > .contact_section
+{
+  margin-left: 50px;
+}
+footer {
+  width: 100%;
+  background-color: rgb(115, 174, 197);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}

@@ -1,0 +1,40 @@
+.doctors_holder {
+  position: relative;
+}
+.doctors_holder > a {
+  z-index: 1;
+}
+.doctors_holder:hover .text_holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(135, 207, 235, 0.308);
+}
+ul {
+  list-style: none;
+}
+.doctor_name {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}
+.doctor_name> img {
+  border-radius: 50%;
+}
+.doctor_name> em {
+  position: absolute;
+  right: 0px;
+  width: max-content;
+}
+.heading{
+  font-weight: bold;
+}
+.progress{
+  background-color: aqua;
+}

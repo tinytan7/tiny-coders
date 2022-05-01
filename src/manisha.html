@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medi-care</title>
+  <link rel="stylesheet" href="../css/home.css" />
+  <link rel="stylesheet" href="../css/doctor.css">
+    <script src="https://kit.fontawesome.com/b15cac4eb4.js" crossorigin="anonymous"></script>
+    <!-- for fonts -->
+</head>
+<body>
+    <header>
+      <div class="ph-number">9898989123 / 01-2345678 / 9812341232</div>
+      <div class="search">
+        <input type="text" />
+        <button>search</button>
+      </div>
+    </header>
+    <nav id="navbar">
+      <img src="../images/logo.gif" alt="" />
+      <a href="../home.html#services">Our services</a>
+      <a href="../home.html#doctors">Our Doctors</a>
+      <a href="src/oops.html" target="_blank">Get Medicine</a>
+      <a href="../home.html#contactus">Contact us</a>
+    </nav>
+    <div class="doctors_section">
+        <div class="social_media">
+                <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                
+        </div>
+            <div class="doctor_detail"><div class="doctor"><img src="../images/doctors/manisha.jfif" alt="no-image">
+                <em>Dr. Manisha Mishra</em></div>
+            <h2 class="heading">About</h2>
+                <p><b>Profile</b><ul>
+                    <li>NMC Number - 7394</li>
+                    <li>Qualification - MBBS, MD</li>
+                    <li>Speciality - Endocrinology</li>
+                    <li>Website - N/A</li>
+                </ul>
+                <b>Experience</b><ul>
+                    <li><b>Sumeru City Hospital</b>&nbsp;(Consultant Endocrinologist)</li>
+                    <li><b>Vayodhya City Hospital</b>&nbsp;(Consultant Endocrinologist)</li>
+                </ul>
+                <b>Education</b><ul>
+                    <li>Taisha Medical University PR.China</li>
+                </ul>
+                    <br><b>professional Skills:</b>
+                    <ul>
+                        <li>Endocrinology</li>
+                        <progress min=0 max=70 value=50></progress>
+                        <li>General Surgery</li>
+                        <progress min=0 max=70 value=60></progress>
+                        <li>General Medicine</li>
+                        <progress min=0 max=70 value=60></progress>
+                    </ul>
+                </p>
+            </div>
+            <div class="review_section">
+                <h2>Review</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <br>
+                    <input type="text" placeholder="E-mail" required>
+                    <br>
+                    <textarea type="text" placeholder="Messege here.." style="resize: none;"></textarea>
+                    <br>
+                    <center>Rate me 
+                        <br/><em id='rating' style="border-bottom:2px dashed brown; padding:3px;"">3</em><br><br>
+                    <sup>min</sup><sub><input type="range" min="1" max="5" onchange="showVal(this.value)"></sub><sup>max</sup>
+                    </center>
+                    <button class=btn-sd>Send</button>
+                </form>
+            </div>
+    </div>
+    <div class="container_section">
+      <div class="contact_section">
+        <h1 id="contactus" class="heading">contact us</h1>
+        <div>
+          <p>015400400 | 9863393960 | 015440000</p>
+          <p>Vaccine Inquiries : 9861966614</p>
+          <p>Sunday - Friday: 7am - 7pm</p>
+          <p>Saturday: 7am - 1pm</p>
+        </div>
+        <div>
+          <p>Norkhang Complex, 2nd Floor</p>
+          <p>Next to St. Xavier's School, Jawalakhel</p>
+          <p>Lalitpur, Nepal</p>
+        </div>
+        <div class="payment">
+          <h1 class="heading">we accept</h1>
+        </div>
+      </div>
+      <div class="map_section"></div>
+    </div>
+
+    <footer>
+      <div class="social_media"></div>
+      <h2>&copy;2022 medicine store. All Rights Reserved</h2>
+    </footer>
+</body>
+<script type="text/javascript">
+            function showVal(val){
+                document.getElementById('rating').innerHTML=val;
+            }
+
+            </script>
+</html>
